@@ -1,0 +1,29 @@
+%overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    rgba(219, 116, 117, 0.6),
+    rgba(228, 205, 125, 0.75)
+  );
+  height: 100%;
+  width: 100%;
+  box-shadow: 7px 7px rgb(141, 245, 175);
+  opacity: 0;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+  .overlay_icon {
+    text-align: center;
+  }
+}
+
+%line {
+  height: 2px;
+  width: 90px;
+  background-color: #f38181;
+  margin: 30px auto;
+}

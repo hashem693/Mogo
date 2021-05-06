@@ -1,0 +1,274 @@
+@import "./assets/partial/placeholder";
+@import "./assets/partial/variables";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "roboto,Montserrat,Kaushan Script";
+}
+section {
+  padding: 100px 0px;
+}
+
+.line {
+  @extend %line;
+}
+
+.overlay {
+  @extend %overlay;
+}
+
+.icon2 {
+  color: $color1;
+}
+h3 {
+  font-family: "Kaushan Script";
+}
+h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+//navbar-start
+.navbar {
+  // background: linear-gradient(
+  //   rgba(219, 116, 117, 0.6),
+  //   rgba(228, 205, 125, 0.75)
+  // );
+  //   url("../img/homebg.jpg");
+  // background: {
+  //   size: cover;
+  //   position: top;
+  //   repeat: no-repeat;
+  // }
+}
+//navbar-end
+
+// header-start
+.header {
+  padding-top: 140px;
+  background: linear-gradient(
+      rgba(219, 116, 117, 0.6),
+      rgba(228, 205, 125, 0.75)
+    ),
+    url("../img/homebg.jpg");
+  background: {
+    size: cover;
+    position: right;
+    repeat: no-repeat;
+  }
+  h1 {
+    font-size: 95px;
+    @media (max-width: 991px) {
+      font-size: 50px;
+    }
+  }
+  h3 {
+    font-size: 30px;
+  }
+  .carousel {
+    padding: 90px 0px;
+  }
+}
+// header-end
+
+// numbers-start
+.numbers {
+  background-color: $color1;
+}
+// numbers-end
+
+// services-start
+.content {
+  .line {
+    background-color: rgb(187, 187, 187);
+  }
+  i {
+    color: $color1;
+  }
+}
+// services-end
+
+.unique {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("../img/divicebg.jpg");
+  background: {
+    repeat: no-repeat;
+    position: center;
+    size: cover;
+  }
+  padding: 100px 0px 0px;
+  .mobile2 {
+    bottom: -90px;
+    left: 62%;
+  }
+}
+
+// services2-start
+.card-body {
+  height: 150px;
+}
+// services-end
+
+// comments-start
+.comments1 {
+  background-color: #f8f8f8;
+  .line {
+    width: 40px;
+  }
+  p {
+    font-size: 20px;
+  }
+  h4::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: $color2;
+    margin: 5px 10px;
+  }
+}
+// comments-end
+
+// teams-start
+.teams {
+  .overlay_icon a {
+    background-color: #fdd354;
+    transition: 0.4s;
+    i {
+      color: $color2;
+      font-size: 20px;
+    }
+    &:hover {
+      background-color: $color2;
+      i {
+        color: white;
+      }
+    }
+  }
+}
+// teams-end
+
+// logos-start
+.logos {
+  background-color: #f8f8f8;
+}
+// logos-end
+
+// work-start
+.work {
+  .overlay {
+    box-shadow: 0px 0px;
+  }
+  .overlay_icon {
+    @media (max-width: 991) {
+      font-size: 10px;
+    }
+  }
+}
+// work-end
+
+// comments2-start
+.comments2 {
+  .line {
+    width: 40px;
+  }
+  p {
+    font-size: 20px;
+  }
+  h4::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: #f38181;
+    margin: 5px 10px;
+  }
+}
+// comments2-end
+
+// clients-start
+.clients {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("../img/clientbg.jpg");
+  background: {
+    repeat: no-repeat;
+    size: cover;
+    position: center;
+  }
+
+  .clients_content {
+    .line {
+      width: 50px;
+      margin: 10px 0px;
+    }
+  }
+}
+// clients-end
+
+// blog-start
+.blog {
+  .card-body {
+    height: auto;
+  }
+  i {
+    color: $color1;
+  }
+  .blog_img {
+    position: relative;
+  }
+  .blog_icon {
+    position: absolute;
+    background-color: $color1;
+    padding: 5px 15px;
+    bottom: 15px;
+    left: -8px;
+  }
+}
+// blog-end
+
+// map-start
+.map {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("../img/mapbg.jpg");
+  background: {
+    repeat: no-repeat;
+    size: cover;
+    position: center;
+  }
+
+  .h4 {
+    color: #f38181;
+  }
+  .line {
+    width: 50px;
+  }
+}
+// map-end
+
+// footer-start
+footer {
+  .line {
+    background-color: rgb(187, 187, 187);
+    margin: 0;
+    height: 1px;
+  }
+  i {
+    color: #78e0cf;
+  }
+  .btn {
+    background-color: $color1;
+  }
+}
+// footer-end
