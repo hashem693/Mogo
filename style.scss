@@ -32,17 +32,20 @@ h2 {
 }
 
 //navbar-start
-.navbar {
-  // background: linear-gradient(
-  //   rgba(219, 116, 117, 0.6),
-  //   rgba(228, 205, 125, 0.75)
-  // );
-  //   url("../img/homebg.jpg");
-  // background: {
-  //   size: cover;
-  //   position: top;
-  //   repeat: no-repeat;
-  // }
+.transparentb {
+  background-color: transparent;
+  transition: 0.5s ease;
+}
+nav.scroll-up,
+nav:focus-within {
+  // top: 0;
+  background-color: rgba(219, 116, 117, 0.9);
+}
+
+nav.scroll-down {
+  // top: -100%;
+  background-color: rgba(219, 116, 117, 0.9);
+  transition: 0.5s ease;
 }
 //navbar-end
 
